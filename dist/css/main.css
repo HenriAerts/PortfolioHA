@@ -304,26 +304,52 @@ img {
 .footer-section .footer-container .connect .connect-content h5 {
   font-weight: 400;
 }
-.footer-section .footer-container .connect .connect-box .connect-btn-container {
+.footer-section .footer-container .connect .connect-box {
   display: flex;
   justify-content: center;
-  margin: 4.5rem;
+  align-items: center;
+  position: relative;
 }
-.footer-section .footer-container .connect .connect-box .connect-btn-container .connect-btn {
-  color: white;
+.footer-section .footer-container .connect .connect-box .transparent-btn {
+  position: absolute;
+  background-color: transparent;
+  z-index: 3;
+  height: 2rem;
+  width: 2rem;
+}
+.footer-section .footer-container .connect .connect-box .connect-btn-container {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin: 0;
+  padding: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  cursor: pointer;
+}
+.footer-section .footer-container .connect .connect-box .connect-btn-container .magnetic-background {
   background-color: #141D37;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  z-index: 1;
+  border-radius: 0.1rem;
+  pointer-events: none;
+  box-shadow: 0px 3rem 10rem 0px rgb(203, 108, 230);
 }
-.footer-section .footer-container .connect .connect-box .connect-btn-container .connect-btn h4, .footer-section .footer-container .connect .connect-box .connect-btn-container .connect-btn i {
-  margin: 0.5rem;
+.footer-section .footer-container .connect .connect-box .connect-btn-container .magnetic-element {
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  pointer-events: none;
 }
-.footer-section .footer-container .connect .connect-box .connect-btn-container .connect-btn i {
-  font-size: 1.5rem;
+.footer-section .footer-container .connect .connect-box .connect-btn-container .magnetic-element .filter-white {
+  filter: brightness(0) invert(1);
+}
+.footer-section .footer-container .connect .connect-box .connect-btn-container .magnetic-element img {
+  height: 100%;
+  vertical-align: bottom;
 }
 .footer-section .footer-container footer .footer-sozials {
   display: flex;
