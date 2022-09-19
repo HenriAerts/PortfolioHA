@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "debug.openExplorerOnEnd": false,
+    "breadcrumbs.enabled": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": false
+}
